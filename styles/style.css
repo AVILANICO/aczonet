@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Estilos del header */
+.header-index {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.logo {
+    font-size: 2rem;
+}
+.container-header {
+    width: 80%;
+    height: 7vh;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.container-logo{
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav ul li {
+    margin-left: 20px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos de la sección hero */
+.container-main{
+    height: 85vh;
+}
+
+.hero {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Estilos de las secciones */
+section {
+    padding: 50px 0;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section p,
+section ul {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Estilos sobre Nosotros*/
+
+.container-nosotros{
+    height: 100vh;
+}
+
+/* Estilos de la lista de servicios */
+.container-servicios{
+    height: 100vh;
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services ul {
+    width: 20vw;
+    text-align: left;
+}
+
+/* Estilos contacto */
+.container-contacto{
+    height: 100vh;
+}
+
+.whatsapp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Estilos del footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
