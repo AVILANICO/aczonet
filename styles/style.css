@@ -194,16 +194,37 @@ section ul {
 
 /* Estilos de la lista de servicios */
 .container-servicios {
-    height: 100vh;
+    height: 93vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.services ul {
-    width: 20vw;
-    text-align: left;
+.services {
+    background-color: #f9f9f9; /* Color de fondo para la sección de servicios */
+    padding-top: 60px; /* Espacio en la parte superior de la sección */
 }
+
+.service {
+    text-align: center; /* Alinear el contenido al centro */
+    margin-bottom: 40px; /* Espacio entre cada servicio */
+}
+
+.service img {
+    width: 80px; /* Tamaño del icono */
+    margin-bottom: 20px; /* Espacio entre el icono y el título */
+}
+
+.service h3 {
+    font-size: 24px; /* Tamaño del título */
+    margin-bottom: 10px; /* Espacio entre el título y el texto */
+}
+
+.service p {
+    font-size: 16px; /* Tamaño del texto */
+    color: #666; /* Color del texto */
+}
+
 
 /* Estilos contacto */
 .container-contacto {
