@@ -7,12 +7,12 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #e7e7e7;
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
-    padding: 20px 0;
 }
 
 /* Estilos del header */
@@ -20,14 +20,19 @@ body {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
     font-size: 2rem;
 }
+
 .container-header {
     width: 80%;
-    height: 7vh;
+    height: 5vh;
     margin: 0 auto;
     padding: 20px 0;
     display: flex;
@@ -36,7 +41,7 @@ body {
 }
 
 
-.container-logo{
+.container-logo {
     width: 15rem;
     display: flex;
     align-items: center;
@@ -64,14 +69,61 @@ body {
 }
 
 /* Estilos de la sección hero */
-.container-main{
-    height: 85vh;
+.container-main {
+    height: 93vh;
+    display: flex;
+}
+
+.section1 {
+    background-color: #e7e7e7;
+    height: 93vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.406), rgba(0, 0, 0, 0.401)), url(../public/img/imgen5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 93vh;
+    width: 50vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cta-buttons .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-buttons .btn:hover {
+    background-color: rgb(197, 141, 0);
+}
+
+.btn-primary {
+    background-color: #007BFF;
+}
+
+.btn-secondary {
+    background-color: #28A745;
 }
 
 .hero {
-    background-color: #f4f4f4;
     text-align: center;
-    padding: 50px 0;
 }
 
 .hero h2 {
@@ -84,9 +136,6 @@ body {
 }
 
 /* Estilos de las secciones */
-section {
-    padding: 50px 0;
-}
 
 section h2 {
     font-size: 2rem;
@@ -102,15 +151,50 @@ section ul {
 
 /* Estilos sobre Nosotros*/
 
-.container-nosotros{
-    height: 100vh;
+.container-nosotros {
+    height: 60vh;
+}
+
+.about {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about-content img {
+    max-width: 35%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.about-text {
+    max-width: 600px;
+    margin: 0 20px;
+    flex: 1;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 /* Estilos de la lista de servicios */
-.container-servicios{
+.container-servicios {
     height: 100vh;
-    padding: 50px 0;
-    background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,14 +206,98 @@ section ul {
 }
 
 /* Estilos contacto */
-.container-contacto{
+.container-contacto {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.552), rgba(0, 0, 0, 0.552)), url(../public/img/imagen2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 100vh;
+    display: flex;
 }
 
-.whatsapp{
+.section-contacto1 {
+    color: white;
+    height: 93vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp {
+    width: 20rem;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.span-mail {
+    text-decoration: none;
+    color: white;
+}
+
+.span-mail:hover {
+    color: goldenrod;
+    text-decoration-line: none;
+}
+
+.section-contacto2 {
+    color: white;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.743);
+    width: 25vw;
+    height: 75vh;
+    border-radius: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contact label {
+    font-size: 1rem;
+    margin: 10px 0 5px;
+}
+
+.contact input,
+.contact textarea {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: goldenrod;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: green;
 }
 
 
@@ -137,6 +305,75 @@ section ul {
 .footer {
     background-color: #333;
     color: #fff;
+    padding: 40px 0;
+    text-align: left;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section li {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section .socials a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-section .socials img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
     text-align: center;
-    padding: 20px 0;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
 }
