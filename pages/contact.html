@@ -56,24 +56,29 @@
         <div class="section-contacto2">
           <h2>Déjanos tu consulta vía email</h2>
           <form action="https://formsubmit.co/wowaura833@gmail.com" method="POST">
+
+            <!-- Parámetros adicionales para el modo de prueba -->
+            <input type="hidden" name="_subject" value="Nueva consulta desde el formulario" />
+            <input type="hidden" name="_honey" value="" />
+            <input type="hidden" name="_template" value="table" />
             <input type="hidden" name="_next" value="https://aczonetlp.netlify.app/" />
             <input type="hidden" name="_captcha" value="false" />
-            
+
             <label for="nombre">Nombre</label>
             <input type="text" id="nombre" name="nombre" required />
-            
+
             <label for="apellido">Apellido</label>
             <input type="text" id="apellido" name="apellido" required />
-            
+
             <label for="telefono">Teléfono</label>
             <input type="tel" id="telefono" name="telefono" required />
-            
+
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required />
-            
+
             <label for="consulta">Consulta</label>
             <textarea id="consulta" name="consulta" rows="6" required></textarea>
-            
+
             <button type="submit">Enviar</button>
           </form>
         </div>
@@ -90,14 +95,14 @@
           </li>
           <li><strong>WhatsApp:</strong> (3524) 400855</li>
           <li>
-            <strong>Email:</strong> <a href="mailto:administrador@aczonet.com"><span class="span-mail">administrador@aczonet.com</span></a>
+            <strong>Email:</strong> <a href="mailto:administrador@aczonet.com"><span
+                class="span-mail">administrador@aczonet.com</span></a>
           </li>
         </ul>
         <div class="socials">
-          <a href=""><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80" height="80"
-              viewBox="0 0 48 48">
-              <linearGradient id="awSgIinfw5_FS5MLHI~A9a_yGcWL8copNNQ_gr1" x1="6.228" x2="42.077" y1="4.896"
-                y2="43.432" gradientUnits="userSpaceOnUse">
+          <a href=""><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80" height="80" viewBox="0 0 48 48">
+              <linearGradient id="awSgIinfw5_FS5MLHI~A9a_yGcWL8copNNQ_gr1" x1="6.228" x2="42.077" y1="4.896" y2="43.432"
+                gradientUnits="userSpaceOnUse">
                 <stop offset="0" stop-color="#0d61a9"></stop>
                 <stop offset="1" stop-color="#16528c"></stop>
               </linearGradient>
@@ -115,9 +120,9 @@
               </path>
             </svg></a>
         </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 ACZONET. Todos los derechos reservados.</p>
-      </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 ACZONET. Todos los derechos reservados.</p>
+        </div>
       </div>
     </div>
   </footer>

@@ -156,7 +156,7 @@ section ul {
 /* Estilos sobre Nosotros*/
 
 .container-nosotros {
-    height: 60vh;
+    min-height: 60vh;
 }
 
 .about {
@@ -416,6 +416,13 @@ form {
 
 /* MEDIA QUERYES */
 
+@media (min-width: 1200px) {
+    .container-footer-contacto{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 /* Laptops grandes (ancho entre 1024px y 1200px) */
 
 @media (min-width: 1024px) and (max-width: 1200px) {
@@ -430,6 +437,11 @@ form {
     form {
         width: 40vw;
         height: 75vh;
+    }
+
+    .container-footer-contacto{
+        display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -448,6 +460,11 @@ form {
 
     .footer-section h3 {
         font-size: 1.8rem;
+    }
+
+    .container-footer-contacto{
+        display: flex;
+        justify-content: space-between;
     }
 
     /* HERO - ABOUT */
@@ -531,6 +548,11 @@ form {
 
     .footer-section h3 {
         font-size: 1.6rem;
+    }
+
+    .container-footer-contacto{
+        display: flex;
+        justify-content: space-between;
     }
 
 
@@ -625,12 +647,20 @@ form {
 
 
     .footer .container {
+        width: 95%;
         flex-direction: column;
         align-items: center;
     }
 
     .footer-section {
         margin: 20px 0;
+        width: 100%;
+    }
+
+
+    .container-footer-contacto{
+        display: flex;
+        justify-content: space-between;
     }
 
     /*HERO - ABOUT*/
@@ -746,19 +776,27 @@ form {
         margin-top: 10px;
     }
 
+
     .footer .container {
+        width: 95%;
         flex-direction: column;
         align-items: center;
     }
 
     .footer-section {
         margin: 20px 0;
-        text-align: center;
+        width: 100%;
     }
 
-    .footer-section ul li {
-        margin-bottom: 15px;
+    .container-footer-contacto{
+        display: flex;
+        justify-content: space-between;
     }
+
+    .socials svg{
+        width: 3rem;
+    }
+
 
     /*HERO - ABOUT*/
     .container-main {
@@ -797,6 +835,10 @@ form {
         flex-direction: column;
     }
 
+    .about-content img{
+        max-width: 80%;
+    }
+
     .about h2 {
         font-size: 1.8rem;
     }
@@ -832,9 +874,6 @@ form {
     }
 
     /*CONTACT*/
-
-
-
 
     form {
         margin-bottom: 2rem;
