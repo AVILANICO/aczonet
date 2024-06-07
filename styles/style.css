@@ -84,6 +84,10 @@ body {
     align-items: center;
 }
 
+.section1 img {
+    width: 45%;
+}
+
 .section2 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.406), rgba(0, 0, 0, 0.401)), url(../public/img/imgen5.jpg);
     background-repeat: no-repeat;
@@ -201,28 +205,38 @@ section ul {
 }
 
 .services {
-    background-color: #f9f9f9; /* Color de fondo para la sección de servicios */
-    padding-top: 60px; /* Espacio en la parte superior de la sección */
+    background-color: #f9f9f9;
+    /* Color de fondo para la sección de servicios */
+    padding-top: 60px;
+    /* Espacio en la parte superior de la sección */
 }
 
 .service {
-    text-align: center; /* Alinear el contenido al centro */
-    margin-bottom: 40px; /* Espacio entre cada servicio */
+    text-align: center;
+    /* Alinear el contenido al centro */
+    margin-bottom: 40px;
+    /* Espacio entre cada servicio */
 }
 
 .service img {
-    width: 80px; /* Tamaño del icono */
-    margin-bottom: 20px; /* Espacio entre el icono y el título */
+    width: 80px;
+    /* Tamaño del icono */
+    margin-bottom: 20px;
+    /* Espacio entre el icono y el título */
 }
 
 .service h3 {
-    font-size: 24px; /* Tamaño del título */
-    margin-bottom: 10px; /* Espacio entre el título y el texto */
+    font-size: 24px;
+    /* Tamaño del título */
+    margin-bottom: 10px;
+    /* Espacio entre el título y el texto */
 }
 
 .service p {
-    font-size: 16px; /* Tamaño del texto */
-    color: #666; /* Color del texto */
+    font-size: 16px;
+    /* Tamaño del texto */
+    color: #666;
+    /* Color del texto */
 }
 
 
@@ -280,7 +294,7 @@ section ul {
 
 form {
     background-color: rgba(0, 0, 0, 0.743);
-    width: 25vw;
+    width: 30vw;
     height: 75vh;
     border-radius: 1rem;
     color: white;
@@ -298,7 +312,7 @@ form {
 
 .contact input,
 .contact textarea {
-    width: 80%;
+    width: 85%;
     max-width: 500px;
     padding: 10px;
     margin-bottom: 20px;
@@ -397,4 +411,480 @@ form {
 .footer-bottom p {
     margin: 0;
     font-size: 0.9rem;
+}
+
+
+/* MEDIA QUERYES */
+
+/* Laptops grandes (ancho entre 1024px y 1200px) */
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .container-contacto {
+        flex-direction: row;
+    }
+
+    .section-contacto1, .section-contacto2 {
+        width: 50%;
+    }
+
+    form {
+        width: 40vw;
+        height: 75vh;
+    }
+}
+
+
+/* Estilo para PCs de escritorio (ancho mayor a 1024px) */
+
+/* HEADER - FOOTER */
+@media (min-width: 1025px) {
+    .container-header {
+        width: 80%;
+    }
+
+    .nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    .footer-section h3 {
+        font-size: 1.8rem;
+    }
+
+    /* HERO - ABOUT */
+    .container-main {
+        height: 93vh;
+    }
+
+    .section1,
+    .section2 {
+        width: 50%;
+    }
+
+    .hero h2 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .about h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-text p {
+        font-size: 1.2rem;
+    }
+
+    /*SERVICIOS*/
+    .container-servicios {
+        height: auto;
+    }
+
+    .services {
+        padding: 60px 0;
+    }
+
+    .service {
+        margin-bottom: 50px;
+    }
+
+    .service img {
+        width: 100px;
+    }
+
+    .service h3 {
+        font-size: 26px;
+    }
+
+    .service p {
+        font-size: 18px;
+    }
+
+    /*CONTACT*/
+    .container-contacto {
+        flex-direction: row;
+    }
+
+    .section-contacto1, .section-contacto2 {
+        width: 50%;
+    }
+
+    form {
+        width: 25vw;
+        height: 75vh;
+    }
+}
+
+
+/* Estilo para laptops (ancho entre 768px y 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /*HEADER - FOOTER */
+    .container-header {
+        width: 90%;
+    }
+
+    .nav ul li a {
+        font-size: 1.1rem;
+    }
+
+    .footer-section h3 {
+        font-size: 1.6rem;
+    }
+
+
+    /*HERO - ABOUT*/
+    .container-main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .section1,
+    .section2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .section1 img {
+        width: 300px;
+    }
+
+    .section2 {
+        height: 40vh;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .about h2 {
+        font-size: 2.2rem;
+    }
+
+    .about-text p {
+        font-size: 1.1rem;
+    }
+
+    /*SERVICIOS*/
+    .container-servicios {
+        height: auto;
+    }
+
+    .services {
+        padding: 50px 0;
+    }
+
+    .service {
+        margin-bottom: 40px;
+    }
+
+    .service img {
+        width: 90px;
+    }
+
+    .service h3 {
+        font-size: 24px;
+    }
+
+    .service p {
+        font-size: 16px;
+    }
+
+    /*CONTACT*/
+    .container-contacto {
+        flex-direction: row;
+    }
+
+    .section-contacto1, .section-contacto2 {
+        width: 50%;
+    }
+
+    .container-contacto h2{
+        font-size: 1.5rem;
+    }
+
+    form {
+        width: 35vw;
+        height: 75vh;
+    }
+}
+
+/* Estilo para tablets (ancho entre 481px y 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+
+    /*HEADER - FOOTER*/
+    .container-header {
+        width: 95%;
+        padding: 10px 0;
+    }
+
+
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 20px 0;
+    }
+
+    /*HERO - ABOUT*/
+    .container-main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .section1,
+    .section2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .section1 {
+        padding: 20px;
+    }
+
+    .section2 {
+        padding: 20px;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    /*SERVICIOS*/
+    .container-servicios {
+        height: auto;
+    }
+
+    .services {
+        padding: 40px 0;
+    }
+
+    .service {
+        margin-bottom: 30px;
+    }
+
+    .service img {
+        width: 80px;
+    }
+
+    .service h3 {
+        font-size: 22px;
+    }
+
+    .service p {
+        font-size: 15px;
+    }
+
+    /*CONTACT*/
+    .container-contacto {
+        flex-direction: column;
+        height: auto;
+        gap: 3rem;
+    }
+
+    .section-contacto1, .section-contacto2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .container-contacto h2{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    form {
+        margin-bottom: 2rem;
+        width: 60vw;
+        height: auto;
+    }
+
+    .contact input, .contact textarea {
+        width: 80%;
+    }
+}
+
+/* Estilo para celulares (ancho menor a 480px) */
+@media (max-width: 480px) {
+
+    /*HEADER - FOOTER*/
+    .container-header {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav ul {
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 15px;
+    }
+
+    /*HERO - ABOUT*/
+    .container-main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .section1,
+    .section2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .section1 {
+        padding: 20px;
+    }
+
+    .section2 {
+        padding: 20px;
+    }
+
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .cta-buttons .btn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-text p {
+        font-size: 0.9rem;
+    }
+
+    /*SERVICIOS*/
+    .container-servicios {
+        height: auto;
+        padding: 0 20px;
+    }
+
+    .services {
+        padding: 30px 0;
+    }
+
+    .service {
+        margin-bottom: 20px;
+    }
+
+    .service img {
+        width: 70px;
+    }
+
+    .service h3 {
+        font-size: 20px;
+    }
+
+    .service p {
+        font-size: 14px;
+    }
+
+    /*CONTACT*/
+
+
+
+
+    form {
+        margin-bottom: 2rem;
+        width: 60vw;
+        height: auto;
+    }
+
+    .contact input, .contact textarea {
+        width: 80%;
+    }
+
+
+
+    .container-contacto {
+        flex-direction: column;
+        height: auto;
+        gap: 3rem;
+
+    }
+
+    .container-contacto h2{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .section-contacto1, .section-contacto2 {
+        width: 100%;
+        height: auto;
+    }
+
+    form {
+        width: 90vw;
+        height: auto;
+    }
+
+    .contact input, .contact textarea {
+        width: 90%;
+    }
+
+    .whatsapp svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .whatsapp h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact h2 {
+        font-size: 1.5rem;
+    }
 }
