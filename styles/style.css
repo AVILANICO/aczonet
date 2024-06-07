@@ -677,10 +677,12 @@ form {
 
     .section1 {
         padding: 20px;
+        height: 60vh;
     }
 
     .section2 {
         padding: 20px;
+        height: 60vh;
     }
 
     .hero h2 {
@@ -812,10 +814,14 @@ form {
 
     .section1 {
         padding: 20px;
+        height: 95vh;
+
     }
 
     .section2 {
         padding: 20px;
+        height: 60vh;
+
     }
 
     .hero h2 {
