@@ -10,6 +10,10 @@ body {
     background-color: #e7e7e7;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -69,6 +73,14 @@ body {
 }
 
 /* Estilos de la sección hero */
+.botonWhatsapp{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+}
+
+
 .container-main {
     height: 93vh;
     display: flex;
@@ -265,6 +277,10 @@ section ul {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.whatsapp a h2{
+    color: white;    
 }
 
 .span-mail {
@@ -757,6 +773,16 @@ form {
     .contact input, .contact textarea {
         width: 80%;
     }
+
+    .botonWhatsapp{
+        position: fixed;
+        bottom: 30px;
+        right: 10px;
+    }
+
+    .botonWhatsapp svg{
+        width: 50px;
+    }
 }
 
 /* Estilo para celulares (ancho menor a 480px) */
@@ -764,7 +790,7 @@ form {
 
     /*HEADER - FOOTER*/
     .container-header {
-        width: 100%;
+        width: 95%;
         padding: 10px 0;
     }
 
@@ -920,6 +946,16 @@ form {
         width: 90%;
     }
 
+    .botonWhatsapp{
+        position: fixed;
+        bottom: 30px;
+        right: 10px;
+    }
+
+    .botonWhatsapp svg{
+        width: 40px;
+    }
+
     .whatsapp svg {
         width: 40px;
         height: 40px;
@@ -927,6 +963,7 @@ form {
 
     .whatsapp h2 {
         font-size: 1.5rem;
+
     }
 
     .contact h2 {
