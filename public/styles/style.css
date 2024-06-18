@@ -337,6 +337,10 @@ form {
     border-radius: 4px;
 }
 
+.asterisco{
+    color: red;
+}
+
 .button {
     padding: 10px 20px;
     font-size: 1rem;
