@@ -807,6 +807,10 @@ form {
         height: auto;
     }
 
+    .container-servicios p{
+        padding: 1rem;
+    }
+
     .container-info2{
         width: 100%;
         height: 60vh;
@@ -985,6 +989,10 @@ form {
     .container-servicios{
         width: 100%;
         height: auto;
+    }
+
+    .container-servicios p{
+        padding: 1rem;
     }
 
     .services-section h2{
