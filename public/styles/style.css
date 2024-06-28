@@ -413,6 +413,13 @@ form {
     color: #333;
     margin-bottom: 10px;
 }
+.mail-politicas {
+    color: black;
+}
+
+.mail-politicas :hover{
+    color: red;
+}
 
 @media (max-width: 768px) {
     .politicas-section {
