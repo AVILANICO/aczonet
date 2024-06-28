@@ -395,6 +395,35 @@ form {
     background-color: rgb(129, 210, 129);
 }
 
+/* Estilos politicas de privacidad */
+
+.politicas-section {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.politicas-section section {
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.politicas-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .politicas-section {
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
+
 
 /* Estilos del footer */
 .footer {
