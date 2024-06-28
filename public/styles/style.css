@@ -434,7 +434,7 @@ form {
 /* face verificacion */
 
 .faceVerificacion-section{
-    height: auto;
+    height: 50vh;
     padding: 3rem;
     display: flex;
     flex-direction: column;
